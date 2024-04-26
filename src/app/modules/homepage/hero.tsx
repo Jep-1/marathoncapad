@@ -26,59 +26,59 @@ export default function Hero() {
 
     const nextSlide = () => {
         const newIndex = (index + 1) % titleList.length;
-        setVisible(false); // Start transition
-        setTimeout(() => { // Hide old slide
+        setVisible(false);
+        setTimeout(() => {
             setIndex(newIndex);
             setText(titleList[newIndex]);
             setDesc(descList[newIndex]);
             setLocation(imgList[newIndex]);
-            setVisible(true); // Show new slide
+            setVisible(true);
         }, 500);
         console.log(index);
     }
     const prevSlide = () => {
         const newIndex = (index - 1 + titleList.length) % titleList.length;
-        setVisible(false); // Start transition
-        setTimeout(() => { // Hide old slide
+        setVisible(false);
+        setTimeout(() => {
             setIndex(newIndex);
             setText(titleList[newIndex]);
             setDesc(descList[newIndex]);
             setLocation(imgList[newIndex]);
-            setVisible(true); // Show new slide
+            setVisible(true);
         }, 500);
 
     }
     const setIndex0 = () => {
         const newIndex = 0;
-        setVisible(false); // Start transition
-        setTimeout(() => { // Hide old slide
+        setVisible(false);
+        setTimeout(() => {
             setIndex(newIndex);
             setText(titleList[newIndex]);
             setDesc(descList[newIndex]);
             setLocation(imgList[newIndex]);
-            setVisible(true); // Show new slide
+            setVisible(true);
         }, 500);
     }
     const setIndex1 = () => {
         const newIndex = 1;
-        setVisible(false); // Start transition
-        setTimeout(() => { // Hide old slide
+        setVisible(false);
+        setTimeout(() => {
             setIndex(newIndex);
             setText(titleList[newIndex]);
             setDesc(descList[newIndex]);
             setLocation(imgList[newIndex]);
-            setVisible(true); // Show new slide
+            setVisible(true);
         }, 500);
     }
     const setIndex2 = () => {
         const newIndex = 2;
-        setVisible(false); // Start transition
-        setTimeout(() => { // Hide old slide
+        setVisible(false);
+        setTimeout(() => {
             setIndex(newIndex);
             setText(titleList[newIndex]);
             setDesc(descList[newIndex]);
             setLocation(imgList[newIndex]);
-            setVisible(true); // Show new slide
+            setVisible(true);
         }, 500);
     }
 
