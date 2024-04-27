@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import NavBar from "../global/nav/nav";
+import NavBar from "../global/nav";
 import skyline from "@/app/media/skyline.webp";
 import street from "@/app/media/street-1.jpg";
 import dev from "@/app/media/development.jpg";
@@ -99,22 +99,22 @@ export default function Hero() {
             <div className="absolute top-0 left-0 bg-slate-700 h-full w-full z-10 opacity-75" />
             <h1 className={`${visible ? ' opacity-100 scale-100 ' : ' opacity-0 scale-90 '} transition-all duration-500 text-center text-white text-8xl z-20`}>{text}</h1>
             <h3 className={`text-white ${visible ? ' opacity-100 translate-y-0 ' : ' opacity-0 translate-y-10 '} delay-75 transition-all duration-500 text-xl p-5 z-20`}>{desc}</h3>
-            <button className={` ${visible ? ' opacity-100 translate-y-0 ' : ' opacity-0 translate-y-10 '} delay-150 transition-all duration-200 rounded-sm border-white border-2 py-3 px-5 text-white hover:bg-white hover:text-black z-40`}>Learn More</button>
+            <a href="/services" className={` ${visible ? ' opacity-100 translate-y-0 ' : ' opacity-0 translate-y-10 '} delay-150 transition-all duration-200 rounded-sm border-white border-2 py-3 px-5 text-white hover:bg-white hover:text-black hover:cursor-pointer z-40`}>Learn More</a>
             <div className="absolute h-screen flex flex-col justify-center w-full z-20">
                 <a className=" self-end"><button onClick={nextSlide} className="  text-white text-3xl mr-5"><IoIosArrowForward /></button></a>
                 <a><button onClick={prevSlide} className="text-white ml-5 text-3xl"><IoIosArrowBack /> </button></a>
             </div>
             <div className=" absolute h-screen flex flex-col z-20 justify-end">
-                <div className="flex flex-row items-center mb-12 text-xl">
+                <div className="flex flex-row items-center mb-12 text-[10px]">
                     <a onClick={setIndex0} className=" hover:cursor-pointer">
                         <span className={` text-blue-300 scale-105 `}><RiCheckboxBlankFill /></span>
                     </a>
-                    <hr className="w-3 m-1 border-white border-[1px] rounded-full"></hr>
+                    <hr className=" w-16 m-1 border-white border-[0.25px] rounded-full"></hr>
                     <a onClick={setIndex1} className="h-full  flex flex-col justify-center items-center relative hover:cursor-pointer">
                         <span className={` absolute text-white `}><RiCheckboxBlankLine /></span>
                         <span className={` ${index >= 1 ? 'opacity-100  scale-105' : 'opacity-0 scale-75'} transition-all duration-500 text-blue-300`}><RiCheckboxBlankFill /></span>
                     </a>
-                    <hr className="w-3 m-1 border-white border-[1px] rounded-full"></hr>
+                    <hr className="w-16 m-1 border-white border-[0.25px] rounded-full"></hr>
                     <a onClick={setIndex2} className="h-full  flex flex-col justify-center items-center relative hover:cursor-pointer">
                         <span className={` absolute text-white  `}><RiCheckboxBlankLine /></span>
                         <span className={` ${index > 1 ? 'opacity-100 scale-105' : 'opacity-0 scale-75'}  transition-all duration-500 text-blue-300 `}><RiCheckboxBlankFill />
