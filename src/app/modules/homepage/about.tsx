@@ -55,7 +55,7 @@ export default function HomeAboutModule() {
                     </div>
 
                     <div className="flex flex-col h-[450px] items-center justify-start">
-                        <p className="text-xl self-start">Contact us today, to learn how we can assist with your company's growth objectives.</p>
+                        <p className="text-xl self-start">Contact us today, to learn how we can assist with your company&apos;s growth objectives.</p>
                         <button className="flex flex-row justify-center items-center bg-slate-700 w-fit m-2 text-white px-2 py-1 rounded-md text-[16px]"
                             style={{
                                 background:
