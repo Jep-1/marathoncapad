@@ -97,8 +97,8 @@ export default function Hero() {
         <div className={` h-screen bg-no-repeat  flex flex-col justify-center items-center overflow-hidden relative `}>
             <Image alt='Background images for scrolling hero' src={imageLocation} className={` ${visible ? ' opacity-100' : ' opacity-0'} transition-all duration-500 absolute w-full h-fit z-10 `} />
             <div className="absolute top-0 left-0 bg-slate-700 h-full w-full z-10 opacity-75" />
-            <h1 className={`${visible ? ' opacity-100 scale-100 ' : ' opacity-0 scale-90 '} transition-all duration-500 text-center text-white text-8xl z-20`}>{text}</h1>
-            <h3 className={`text-white ${visible ? ' opacity-100 translate-y-0 ' : ' opacity-0 translate-y-10 '} delay-75 transition-all duration-500 text-xl p-5 z-20`}>{desc}</h3>
+            <h1 key={index} className={`${visible ? ' opacity-100 scale-100 ' : ' opacity-0 scale-90 '} transition-all duration-500 text-center text-white text-8xl z-20`}>{text}</h1>
+            <h3 key={"desc" + index} className={`text-white ${visible ? ' opacity-100 translate-y-0 ' : ' opacity-0 translate-y-10 '} delay-75 transition-all duration-500 text-xl p-5 z-20`}>{desc}</h3>
             <a href="/services" className={` ${visible ? ' opacity-100 translate-y-0 ' : ' opacity-0 translate-y-10 '} delay-150 transition-all duration-200 rounded-sm border-white border-2 py-3 px-5 text-white hover:bg-white hover:text-black hover:cursor-pointer z-40`}>Learn More</a>
             <div className="absolute h-screen flex flex-col justify-center w-full z-20">
                 <a className=" self-end"><button onClick={nextSlide} className="  text-white text-3xl mr-5"><IoIosArrowForward /></button></a>
