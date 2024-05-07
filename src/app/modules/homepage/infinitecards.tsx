@@ -23,7 +23,7 @@ export default function InfiniteMovingCardsHome() {
     return (<>
 
         <div className="p-5 w-full ">
-            <InfiniteMovingCards items={items} pauseOnHover={true} direction="right" speed="slow" />
+            <InfiniteMovingCards items={items} pauseOnHover={false} direction="right" speed="slow" />
         </div>
     </>)
 }
